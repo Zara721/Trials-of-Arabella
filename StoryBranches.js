@@ -217,10 +217,35 @@ window.StoryBranches = {
     },
     prince: {
       "lovesick_unmoved": [
-        {type: "narrative", text: "",
-        link: "",
+        {type: "narrative", text: "Prince Leonor's guard, Lucien, entered his study with urgent news - a remaining lineage of the royal line had been found. <br> Contemplating his status as an illegitimate prince, Leonor realized that his secret could not remain hidden indefinitely. <br>",
+        link: "Prince Leonor instructed Lucien to conduct a more thorough investigation.",
         linkColor: "#A2D4EF"},
-      ],  
+        {type: "scene", backgroundScr: "images/scenes/arabellaRoom_prince.png",
+         characterSrc: "images/characters/guard_prince.png"},
+        {type: "narrative", text: "Further investigation led Lucien to Arabella's estate, where he discovered and perused her private diary. <br> Returning to Prince Leonor, Lucien revealed Arabella's intention to elope with a foreign count. <br>",
+        link: "Stirred by the instability of his position, Prince Leonor devised a plan to marry Arabella and secure his claim to the throne.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "Dispatching Lucien to investigate the count, the guard uncovered the count's relentless pursuit of the elusive flower of Verania, spending vast sums of money in the process. With this knowledge, Prince Leonor sought to leverage the flower to convince Count Alano to leave Arabella. <br>",
+        link: "Prince Leonor and Lucien shadowed the couple, waiting for the opportune moment to intervene.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "Witnessing Arabella's collapse, Prince Leonor, accompanied by Lucien, approached Count Alano, ready to negotiate. <br> Prince Leonor divulged his extensive knowledge of the flower of Verania's whereabouts in the surrounding areas, accompanied by a solemn warning that its fleeting blooming season would conclude tomorrow at the stroke of midnight. <br>",
+        link: "The count, after a brief moment of contemplation, made a decisive turn as if to depart.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "However, he abruptly halted, fixing his gaze upon Prince Leonor, 'Can you assure me of her safety?' <br> Prince Leonor responded with his trademark smile, 'Certainly, I am a gentleman, and I'll even heal her while I'm at it.' <br>",
+        link: "A sigh of relief escaped Prince Leonor as he observed the count embarking on his journey toward the cavern that held the fabled flower.",
+        linkColor: "#A2D4EF"},
+        {type: "choice", text: "", 
+         choice1: "Prince Leonor resumed his role as the silent shadow, accompanied by Lucien, ready to watch over the unfolding events.", 
+         choice2: "Prince Leonor rubbed his temples and chose to disguise himself as a passing good Samaritan.", linkColor: "#A2D4EF",
+         povCharacter: "prince", nextScene1: "inShadows", nextScene2: "fakeSamaritan"},
+         {type: "sceneChange"},
+      ],
+      "inShadows": [
+
+      ],
+      "fakeSamaritan": [
+
+      ],
       "lovesick_enamoured": [
 
       ],  
