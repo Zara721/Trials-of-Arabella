@@ -1,0 +1,40 @@
+.Choice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 1.5;
+    box-sizing: border-box;
+    background-image: url("/images/textBg2.png");
+
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+  }
+
+  .Choice.show {
+    opacity: 1;
+  }
+  
+.Choice_text {
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+}
+  
+.Choice_link {
+    color: inherit;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
+    margin-left: 200px;
+    margin-right: 200px;
+    text-align: center;
+  }
+  
+.Choice_link:hover {
+    text-decoration: underline;
+}

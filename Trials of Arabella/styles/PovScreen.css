@@ -1,0 +1,89 @@
+.pov-text {
+    font-size: 50px;
+    margin: 5px;
+    width: 100%;
+    text-align: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: aliceblue;
+    position: fixed;
+    top: 50px;
+  }
+
+  .pov-character-name {
+    display: inline-block;
+    /* Add transition property for smooth transitions */
+    transition: all 2s ease-in-out;
+    opacity: 1;
+  }
+  
+  .pov-screen {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: aliceblue;
+    margin-top: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .character-images {
+    display: flex;
+    gap: 100px;
+    margin-top: 200px;
+  }
+  
+  .character-image {
+    cursor: pointer;
+    margin-bottom: 10px;
+  }
+  
+  .traits {
+    display: flex;
+    gap: 100px;
+  }
+  
+  .traits-prince,
+  .traits-heroine,
+  .traits-count {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: left;
+  }
+
+  .trait-label {
+    display: inline-flex;
+    align-items: left;
+    gap: 5px;
+  }
+
+  input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+  }
+  
+  input[type="radio"] + span::before {
+    content: '';
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    margin-right: 8px;
+    border: 1px solid #dcdcdc;
+    border-radius: 50%;
+    vertical-align: middle;
+  }
+  
+  input[type="radio"]:checked + span::before {
+    background-color: #383838;
+  }
+
+  .endings-counter {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #a4a4a4;
+  }
+  

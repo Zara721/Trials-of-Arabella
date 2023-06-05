@@ -1,0 +1,19 @@
+.continueButton {
+    font-family: 'Cormorant Garamond', serif;
+    background-color: transparent;
+    color: black;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .continueButton:hover {
+    background-color: transparent;
+    text-decoration: underline;
+  }
+  
