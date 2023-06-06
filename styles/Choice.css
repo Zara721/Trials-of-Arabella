@@ -8,7 +8,7 @@
     font-size: 20px;
     line-height: 1.5;
     box-sizing: border-box;
-    background-image: url("/images/textBg2.png");
+    background-image: url("textBg2.png");
 
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
