@@ -26,8 +26,15 @@ class Story {
         loop();
     }
 
-    init() {
+    async init() {
         const container = document.querySelector(".game-container");
+
+         // Create and initialize the TitleScreen
+         this.titleScreen = new TitleScreen();
+         await this.titleScreen.init(container);
+ 
+         // Remove the TitleScreen
+         this.titleScreen.close();
 
         // Character Pov screen
         const povScreen = new PovScreen(
