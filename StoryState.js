@@ -6,7 +6,7 @@ class StoryState {
             count: "unmoved", //traits: unmoved, enamoured
         };
         this.unlockedTraits = {
-            heroine: ["lovesick","responsible", "devout"], //,"responsible", "devout"
+            heroine: ["lovesick", "devout"], //,"responsible", "devout"
             prince: ["scheming", "soft-hearted"], //, "soft-hearted"
             count: ["unmoved", "enamoured"], //, "enamoured"
         }
@@ -19,7 +19,9 @@ class StoryState {
           "Ending: Silent Goodbye", "Ending: Tragic Farewell", "Ending: Waiting Game",
           "Ending: Kindled Dreams", "Ending: My medicinal prince",
           //Prince endings
-          "Ending: Lady's Man", "Ending: Dagger behind a Smile",
+          "Ending: Lady's Man", "Ending: Dagger behind a Smile", "Ending: Blood on one's Hands",
+          "Ending: Missed the Mark", "Ending: Long Con", "Ending: Back to the Drawing Board",
+          "Ending: Royal Ambitions",
           //Count endings
           "Ending: So close, yet so far", "Ending: Shattered Dreams", "Ending: Into the unknown",
           "Ending: Unfortunate Demise", "Ending: New Beginnings", "Ending: A Distant Homecoming"
