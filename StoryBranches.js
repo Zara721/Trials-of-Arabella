@@ -241,10 +241,31 @@ window.StoryBranches = {
          {type: "sceneChange"},
       ],
       "inShadows": [
-
+        {type: "scene", backgroundScr: "images/scenes/beach_prince.png",
+        characterSrc: "images/characters/leonor_prince.png"},
+        {type: "narrative", text: "As Prince Leonor shadowed Arabella, his mind couldn't help but entertain a myriad of worrisome scenarios: the possibility of Arabella's condition deteriorating and succumbing to her illness, her unwavering devotion to the count, and the count's potential return after obtaining the flower of Verania.<br>",
+        link: "Taking a deep breath, Prince Leonor regained his composure and strived to address these concerns.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "He instructed Lucien to handle the count, ensuring that he would not disrupt Arabella's life any further. <br> With one worry attended to, Prince Leonor continued his discreet surveillance of Arabella and observed her securing accommodation at a desolate inn. <br>",
+        link: "Donning more modest attire, Prince Leonor cleared his throat and rapped gently on her door.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "After a brief pause, the door swung open, revealing a weary-faced Arabella. <br> Prince Leonor nonchalantly entered the room, offering his signature smile, and spoke with a reassuring tone, 'M'lady, I have learned of your affliction, and as a doctor, I may possess the means to alleviate your suffering.' <br>",
+        link: "Watching Arabella's cheeks flush with a rosy hue, Prince Leonor was confident that his charismatic charm would captivate her heart.",
+        linkColor: "#A2D4EF"},
+        //change to a rose
+        {type: "ending", endingImgSrc: "images/endings/rose.png", endingTextContent: "Ending: Lady's Man", character: "prince", trait: "scheming"}
       ],
       "fakeSamaritan": [
-
+        {type: "narrative", text: "Concerned for Arabella's well-being, Prince Leonor sends Lucien to rent a carriage and stays by her side as she regains consciousness. <br>",
+        link: "Lucien returns with the carriage, and they carefully assist Arabella into the back, embarking on a journey to a nearby seaside town.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "During the carriage ride, Arabella slowly awakens, and Prince Leonor, assuming the persona of Leo, a traveling doctor, lies about coincidentally coming across her on the sidewalk. <br>",
+        link: "Engaging in small talk, they begin to get to know each other better as they approach their destination.",
+        linkColor: "#A2D4EF"},
+        {type: "narrative", text: "Upon arrival, Prince Leonor offers Arabella a room in his guesthouse, but she politely declines, leading him to suggest a nearby inn.",
+        link: "After assisting Arabella in booking a room, Prince Leonor maintains contact until the day she invites him to meet her parents.",
+        linkColor: "#A2D4EF"},
+        {type: "ending", endingImgSrc: "images/endings/marriage_ring.png", endingTextContent: "Ending: Dagger behind a Smile", character: "prince", trait: "soft-hearted"}
       ],
       "lovesick_enamoured": [
 

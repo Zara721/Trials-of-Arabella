@@ -19,6 +19,7 @@ class StoryState {
           "Ending: Silent Goodbye", "Ending: Tragic Farewell", "Ending: Waiting Game",
           "Ending: Kindled Dreams", "Ending: My medicinal prince",
           //Prince endings
+          "Ending: Lady's Man", "Ending: Dagger behind a Smile",
           //Count endings
           "Ending: So close, yet so far", "Ending: Shattered Dreams", "Ending: Into the unknown",
           "Ending: Unfortunate Demise", "Ending: New Beginnings", "Ending: A Distant Homecoming"
