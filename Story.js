@@ -40,7 +40,6 @@ class Story {
             //play prince music
           });
     }
-    }
 
     startGameLoop() {
         const loop = () => {
