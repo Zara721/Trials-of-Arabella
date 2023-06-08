@@ -16,20 +16,24 @@ class Character {
             "left": ["x", -1],
           };
 
-        window.addEventListener("keydown", (event) => {
+          window.addEventListener("keydown", (event) => {
             if (event.key === "ArrowRight") {
-              if (this.movingProgressRemaining <= 0) {
-                this.movingProgressRemaining = 16;
                 this.direction = "right";
-              }
+                this.isMoving = true;
             } else if (event.key === "ArrowLeft") {
-              if (this.movingProgressRemaining <= 0) {
-                this.movingProgressRemaining = 16;
                 this.direction = "left";
-              }
+                this.isMoving = true;
             }
           });
           
+          window.addEventListener("keyup", (event) => {
+            if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+              this.isMoving = false;
+            }
+          });
+
+          this.speed = 2; 
+          this.isMoving = false; 
     }
 
     update() {
@@ -38,10 +42,9 @@ class Character {
     }
 
     updatePosition() {
-        if (this.movingProgressRemaining > 0) {
-            const [property, change] = this.directionUpdate[this.direction];
-            this[property] += change;
-            this.movingProgressRemaining -= 1
+        if (this.isMoving) {
+        const [property, change] = this.directionUpdate[this.direction];
+        this[property] += change * this.speed;
         }
     }
 
