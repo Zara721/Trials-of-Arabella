@@ -47,39 +47,61 @@ class Scene {
 
   createContinueButton() {
     this.continueButton = document.createElement("button");
-
+  
     this.continueButton.textContent = "Continue";
     this.continueButton.classList.add("continueButton");
-
+  
     this.continueButton.style.position = "absolute";
     this.continueButton.style.bottom = "10px";
     this.continueButton.style.right = "10px";
-
+  
     this.continueButton.addEventListener("click", () => {
       this.onComplete();
       this.canvas.remove();
       this.continueButton.remove();
+      this.removeInstructionBox();
     });
+  
     this.container.appendChild(this.continueButton);
   }
-
+  
+  removeInstructionBox() {
+    const box = document.querySelector(".instruction-box");
+    if (box) {
+      box.remove();
+    }
+  }
+  
   init(container) {
     this.container = container;
+  
+    // Add a div element for the black box and the text
+    const box = document.createElement("div");
+    box.classList.add("instruction-box");
+    box.textContent = "Use the Arrow Key to Move";
+    this.container.appendChild(box);
+  
+    // Position the box in the center of the canvas
+    box.style.top = `${this.canvas.height / 2 - box.offsetHeight / 2}px`;
+    box.style.left = `${this.canvas.width / 2 - box.offsetWidth / 2}px`;
+  
     this.draw();
     this.createContinueButton();
-
+  
     setInterval(() => {
       // Call the update method of the Character instance
       this.character.update();
       this.draw();
     }, 1000 / 60);
-
+  
     setTimeout(() => {
       this.onComplete();
       this.continueButton.remove();
       this.canvas.remove();
+      this.removeInstructionBox();
     }, 20000);
-  }
+  }  
+  
 }
 
-  
+

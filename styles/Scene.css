@@ -17,3 +17,12 @@
     text-decoration: underline;
   }
   
+  .instruction-box {
+    background-color: black;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    top: -10px;
+    right: 10px;
+  }
+  

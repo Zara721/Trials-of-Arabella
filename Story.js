@@ -4,6 +4,11 @@ class Story {
         this.canvas = this.element.querySelector(".game-canvas");
         this.ctx = this.canvas.getContext("2d");
 
+        this.introMusic = "sounds/intro.mp3";
+        this.heroineSoundtrack = "sounds/arabella.mp3";
+        this.countSoundtrack = "sounds/count.mp3";
+        this.princeSoundtrack = "sounds/prince.mp3";
+
         this.storyBranches = new StoryBranches({ povCharacter: null, traits: {} });
         document.addEventListener("ResetStory", () => {
             const povScreen = new PovScreen(
