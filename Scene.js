@@ -1,7 +1,9 @@
 class Scene {
-  constructor({ backgroundScr, characterSrc, onComplete }) {
+  constructor({ backgroundScr, characterSrc, extraSrc, onComplete }) {
     this.background = new Image();
     this.background.src = backgroundScr;
+
+    this.extraSrc = extraSrc;
 
     this.imagesLoaded = 0;
 
@@ -33,6 +35,13 @@ class Scene {
 
   draw() {
     this.ctx.drawImage(this.background, 0, 0);
+
+    if (this.extraSrc) {
+      const extraImage = new Image();
+      extraImage.src = this.extraSrc;
+      this.ctx.drawImage(extraImage, 120, 300, 96, 192);
+    }
+
     this.character.sprite.draw(this.ctx);
   }
 

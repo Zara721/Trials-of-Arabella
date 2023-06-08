@@ -31,6 +31,7 @@ class StoryEvent{
       const scene = new Scene({
         backgroundScr: this.event.backgroundScr,
         characterSrc: this.event.characterSrc,
+        extraSrc: this.event.extraSrc,
         onComplete: () => resolve()
       });
       scene.init(document.querySelector(".game-container"));
