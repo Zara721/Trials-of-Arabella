@@ -23,6 +23,18 @@ class PovScreen {
       // Remove the PovScreen and the "pov-screen" class
       this.element.innerHTML = '';
       this.element.classList.remove('pov-screen');
+
+      if (povCharacter == 'heroine') {
+        utils.emitEvent("HeroineJam");
+      }
+
+      if (povCharacter == 'count') {
+        utils.emitEvent("CountJam");
+      }
+
+      if (povCharacter == 'prince') {
+        utils.emitEvent("PrinceJam");
+      }
   
       const otherCharacters = ['prince', 'heroine', 'count'].filter(character => character !== povCharacter);
       console.log(otherCharacters)
@@ -108,6 +120,7 @@ class PovScreen {
       
       });
       
+      utils.emitEvent("IntroJam");
     }
   }
   
