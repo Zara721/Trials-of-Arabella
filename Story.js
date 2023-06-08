@@ -19,6 +19,27 @@ class Story {
               );
               povScreen.render();
           });
+
+          document.addEventListener("IntroJam", () => {
+            //stop playing any ongoing music
+            //play intro music
+          });
+
+          document.addEventListener("HeroineJam", () => {
+            //stop playing intro music
+            //play heroine music
+          });
+
+          document.addEventListener("CountJam", () => {
+            //stop playing intro music
+            //play count music
+          });
+
+          document.addEventListener("princeJam", () => {
+            //stop playing intro music
+            //play prince music
+          });
+    }
     }
 
     startGameLoop() {
