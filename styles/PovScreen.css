@@ -75,7 +75,7 @@
   }
   
   input[type="radio"]:checked + span::before {
-    background-color: #383838;
+    background-color: #717171;
   }
 
   .endings-counter {
