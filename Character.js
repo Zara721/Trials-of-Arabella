@@ -69,7 +69,9 @@ class Character {
     
         const [property, change] = this.directionUpdate[this.direction];
         const newPropertyValue = this[property] + change * this.speed;
-    
+        
+        this.bounds.bottom = this.scene.cave ? 330 : this.bounds.bottom;
+        
         // Check if new position is outside of bounds
         if (property === "y" && (newPropertyValue < this.bounds.bottom || newPropertyValue > this.bounds.top)) {
           console.log("New position is outside of bounds!");

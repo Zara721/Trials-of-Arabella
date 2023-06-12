@@ -3,6 +3,9 @@ class Scene {
     this.background = new Image();
     this.background.src = backgroundScr;
 
+    const containsCave = this.background.src.includes("cave");
+    this.cave = containsCave;
+
     this.extraSrc = extraSrc;
 
     this.imagesLoaded = 0;
@@ -70,6 +73,11 @@ class Scene {
     if (box) {
       box.remove();
     }
+  }
+
+  containsCave() {
+    const containsCave = this.backgroundSrc.includes("cave");
+    return containsCave;
   }
   
   init(container) {
