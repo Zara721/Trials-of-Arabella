@@ -35,4 +35,18 @@
     outline-style: none;
  }
 
+ .rationale-link {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  text-decoration: none;
+  color: #828282;
+  font-size: 16px;
+  transition: text-decoration 0.3s ease-in-out;
+}
+
+.rationale-link:hover {
+  text-decoration: underline;
+}
+
  
