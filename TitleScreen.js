@@ -30,7 +30,7 @@ class TitleScreen {
         this.createElement();
         container.appendChild(this.element);
         setTimeout(() => {
-            this.element.classList.add("show"); // Add the "show" class after appending
+            this.element.classList.add("show"); 
           }, 100);
         await this.getOptions();
     }
